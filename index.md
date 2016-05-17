@@ -4,12 +4,11 @@ title: Home
 permalink: /
 ---
 
-Some information about you!
+Find your passion for Parkour by joining in classes, workshops and other training sessions with the Perth Parkour community.
 
-### More Information
+### about
 
-A place to include any other types of information that you'd like to include about yourself.
+### events
 
-### Contact me
+### services
 
-[email@domain.com](mailto:email@domain.com)

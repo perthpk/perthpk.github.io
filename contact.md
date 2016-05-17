@@ -4,12 +4,10 @@ title: Contact
 permalink: /contact/
 ---
 
-Some information about you!
+Before contacting, please note the following:
 
-### More Information
+    Our regular Saturday classes are available to everyone regardless of age, gender or fitness level
 
-A place to include any other types of information that you'd like to include about yourself.
+    Our classes run in rain, hail or shine
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+    No need to sign up prior to the Saturday class, but pre-filling out a waiver is requested
