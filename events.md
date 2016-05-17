@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Events
-permalink: /events/
+permalink: /events
 ---
 
 To register for a Saturday class please buy a ticket from [Eventbrite](https:///www.eventbrite.com.au/o/perth-parkour-inc-8630642536)
