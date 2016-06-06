@@ -2,6 +2,8 @@
 layout: page
 title: Services
 permalink: /services
+hero-class: hero-services
+hero-text: GET INVOLVED
 ---
 
 ### Learn parkour with the Perth Parkour community
