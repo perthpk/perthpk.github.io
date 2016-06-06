@@ -1,5 +1,18 @@
-<div class="hero-outer {{ include.hero-class }}"><div class="hero-inner">
+{% if include.hero-image %}
+<style type="text/css">
+.hero-image {
+    background-image: url("{{ site.baseurl }}{{ include.hero-image }}");
+    background-position: center;
+    height: 40vh;
+}
+</style>
+<div class="hero-outer hero-image">
+{% else %}
+<div class="hero-outer {{ include.hero-class }}">
+{% endif %}
+<div class="hero-inner">
     <span class="hero-caption">{{ include.hero-text }}</span>
     <span class="hero-footnote">{{ include.hero-footnote }}</span>
-</div></div>
+</div>
+</div>
 
