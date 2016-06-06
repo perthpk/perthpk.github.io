@@ -4,7 +4,7 @@ title: APA Think Tank December 2015
 category: General
 tags: apa, community
 authors: Matt James
-summary: A few times a year the leaders of parkour communities across Australia come together to discuss and plan the future of the APA. This time Isaac and I travelled to Melbourne to meet up with the other community leaders. I was really excited to go over as it was my first Think Tank.
+excerpt: A few times a year the leaders of parkour communities across Australia come together to discuss and plan the future of the APA. This time Isaac and I travelled to Melbourne to meet up with the other community leaders. I was really excited to go over as it was my first Think Tank.
 ---
 A few times a year the leaders of Parkour communities across Australia come together to discuss and plan the future of the Australian Parkour Association (APA). This time Isaac and I travelled to Melbourne to meet up with the other community leaders. I was really excited to go over as it was my first Think Tank.
 
