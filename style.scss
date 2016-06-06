@@ -27,38 +27,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* top-of-page image block */
+.hero-outer {
+    background-size: cover;
+    min-height: 20rem;
+    margin-bottom: 1.25rem;
+}
+
 .hero-index {
     background-image: url("{{ site.baseurl }}/images/hero.jpg");
-    background-size: cover;
     background-position: center;
     height: 65vh;
-    margin-bottom: 1.25rem;
 }
 
 .hero-about {
     background-image: url("{{ site.baseurl }}/images/plancy.jpg");
-    background-size: cover;
     background-position: bottom;
     height: 40vh;
-    min-height: 20rem;
-    margin-bottom: 1.25rem;
 }
 
 .hero-events {
     background-image: url("{{ site.baseurl }}/images/parkour/grant_instruct.jpg");
-    background-size: cover;
     background-position: center;
     height: 40vh;
-    min-height: 20rem;
-    margin-bottom: 1.25rem;
 }
 
 .hero-404 {
     background-image: url("{{ site.baseurl }}/images/404.gif");
-    background-size: cover;
     background-position: bottom;
     height: 60vh;
-    margin-bottom: 1.25rem;
 }
 
 /* wrapper to allow absolute positioning */
