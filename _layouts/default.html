@@ -1,54 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation-flex.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/ppk.css">
 
-    {% include meta.html %}
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    </head>
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+    <body>
+        <div class="off-canvas-wrap" data-offcanvas>
+	        <div class="inner-wrap">
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+                <div class="main">
+                    
+                    <!--nav class="tab-bar show-for-small">
+                        <section class="left-small">
+                            <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+                        </section>
+                        <section class="middle tab-bar-section mobile-title">
+                            PERTH PARKOUR
+                        </section>
+                        <section class="right-small">
+                            <a class="magnifying-glass-icon"><span></span></a>
+                        </section>
+                    </nav>
+                    <aside class="left-off-canvas-menu" aria-hidden="true">
+                        <ul class="off-canvas-list">
+                            <li><label>Navigation</label></li>
+                            <li><a href="/">home</a></li>
+                            <li class="">
+                                <a href="/projects/">projects</a>
+                            </li>
+                            <li class="">
+                                <a href="/writing/">writing</a>
+                            </li>
+                            <li class="">
+                                <a href="/about/">about</a>
+                            </li>
+                        </ul>	
+                    </aside-->
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+                    <div class="top-bar show-for-medium" data-topbar>
 
-          <nav>
-            <a href="{{ site.baseurl }}/about">About</a>
-            <a href="{{ site.baseurl }}/events">Events</a>
-            <a href="{{ site.baseurl }}/blog">Blog</a>
-            <a href="{{ site.baseurl }}/services">Services</a>
-            <a href="{{ site.baseurl }}/contact">Contact</a>
-          </nav>
-        </header>
-      </div>
-    </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+                        <ul class="top-bar-left menu">
+                            <li>
+                                <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg"/></a>
+                            </li>
+                        </ul>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+                        <ul class="top-bar-right menu align-right">
+                            <li>
+                                <a class="link-orange" href="{{ site.baseurl }}/about">ABOUT</a>
+                            </li>
+                            <li>
+                                <a class="link-yellow" href="{{ site.baseurl }}/events">EVENTS</a>
+                            </li>
+                            <li>
+                                <a class="link-green" href="{{ site.baseurl }}/blog">BLOG</a>
+                            </li>
+                            <li>
+                                <a class="link-blue" href="{{ site.baseurl }}/services">SERVICES</a>
+                            </li>
+                            <li>
+                                <a class="link-purple" href="{{ site.baseurl }}/contact">CONTACT</a>
+                            </li>
+                        </ul>
 
-    {% include analytics.html %}
-  </body>
+
+                    </div>	
+
+                    <a class="exit-off-canvas" href="#"></a>
+
+                    {% include hero.html hero-class=page.hero-class hero-text=page.hero-text hero-footnote=page.hero-footnote %}
+
+                    <div class="row content">
+                        <div class="large-12 columns">
+                            {{ content }}
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer">
+                    <div class="row">
+                        <div class="large-9 medium-9 medium-text-left text-center columns">
+                            <p>
+                                <span class="footer-copy">© {{ site.time | date: "%Y" }} PERTH PARKOUR INC</span>&nbsp;&nbsp;&nbsp;
+                                <span class="footer-abn">ABN 54 934 485 134</span>
+                            </p>      
+                        </div>
+                        <div class="large-3 medium-3 medium-text-right text-center columns">
+                            <p>
+                                <a class="link-cyan" title="Twitter" href="https://twitter.com/perth_parkour"><i class="fa fa-twitter"></i></a>&nbsp;
+                                <a class="link-blue" title="Facebook" href="https://www.facebook.com/perthparkour"><i class="fa fa-facebook-official"></i></a>&nbsp;
+                                <a class="link-purple" title="Instagram" href="https://www.instagram.com/perth_parkour"><i class="fa fa-instagram"></i></a>&nbsp;
+                                <a class="link-yellow" href="{{ site.baseurl }}/contact"><i class="fa fa-envelope"></i></a>  
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--inner-wrap-->
+        </div> <!--off-canvas-wrap-->
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
+        <script type="text/javascript>
+        $(document).foundation();
+        </script>
+        {% include analytics.html %}
+    </body>
 </html>

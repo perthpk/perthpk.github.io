@@ -2,6 +2,8 @@
 layout: page
 title: About
 permalink: /about/
+hero-class: hero-about
+hero-text: BE STRONG
 ---
 
 ### About the Perth Parkour community.
