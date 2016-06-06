@@ -11,9 +11,17 @@ hero-text: REACH. ESCAPE.
 
 Find your passion for Parkour by joining in classes, workshops and other training sessions with the Perth Parkour community.
 
-### about
-
-### events
-
-### services
-
+<div class="row">
+<div class="columns large-4 small-12">
+<a href="/about"><h3>about</h3>
+<img src="/images/parkour/grant_pre.jpg" class="thumbnail" title="Learn about Parkour and the Perth Parkour Community">
+</a></div>
+<div class="columns large-4 small-12">
+<a href="/events"><h3>events</h3>
+<img src="/images/parkour/rail_quad.jpg" class="thumbnail" title="Find the next Perth Parkour class or workshop on our calendar">
+</a></div>
+<div class="columns large-4 small-12">
+<a href="/services"><h3>services</h3>
+<img src="/images/parkour/ian_catpass.jpg" class="thumbnail" title="Find out what we offer in terms of classes and training">
+</a></div>
+</div>
