@@ -40,7 +40,7 @@ Perth Parkour have run many workshops for schools, local councils, youth organiz
 
 <div class="row">
 <div class="columns large-4 small-12">
-<img src="/images/parkour/toby.jpg" alt="Wall pushups" class="thumbnail">
+<img src="/images/parkour/toby.jpg" alt="Precision jump" class="thumbnail">
 </div>
 <div class="columns" markdown="1">
 ### Casual training
