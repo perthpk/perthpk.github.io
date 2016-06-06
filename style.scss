@@ -138,31 +138,31 @@ $top-bar-height: 136px;
 }
 
 /* add pretty colours to the topbar links */
-a:hover.link-purple {
+a:hover.link-purple, a.current.link-purple {
     color: #ad7fa8;
 }
 
-a:hover.link-cyan {
+a:hover.link-cyan, a.current.link-cyan {
     color: #72c1cf;
 }
 
-a:hover.link-blue {
+a:hover.link-blue, a.current.link-blue {
     color: #729fcf;
 }
 
-a:hover.link-green {
+a:hover.link-green, a.current.link-green {
     color: #8ae234;
 }
 
-a:hover.link-yellow {
+a:hover.link-yellow, a.current.link-yellow {
     color: #fce94f;
 }
 
-a:hover.link-orange {
+a:hover.link-orange, a.current.link-orange {
     color: #fcaf3e;
 }
 
-a:hover.link-red {
+a:hover.link-red, a.current.link-red {
     color: #ef2929;
 }
 

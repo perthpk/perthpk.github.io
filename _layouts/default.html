@@ -36,15 +36,6 @@
                         <ul class="off-canvas-list">
                             <li><label>Navigation</label></li>
                             <li><a href="/">home</a></li>
-                            <li class="">
-                                <a href="/projects/">projects</a>
-                            </li>
-                            <li class="">
-                                <a href="/writing/">writing</a>
-                            </li>
-                            <li class="">
-                                <a href="/about/">about</a>
-                            </li>
                         </ul>	
                     </aside-->
 
@@ -114,7 +105,8 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
         <script type="text/javascript>
-        $(document).foundation();
+            $(document).foundation();
+            $("a[href*='" + location.pathname.slice(0,-1) + "']").addClass("current");
         </script>
         {% include analytics.html %}
     </body>
