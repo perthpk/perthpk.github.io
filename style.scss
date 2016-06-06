@@ -1,289 +1,287 @@
 ---
 ---
 
-//
-// IMPORTS
-//
 
-@import "reset";
-@import "variables";
-// Syntax highlighting @import is at the bottom of this file
-
-/**************/
-/* BASE RULES */
-/**************/
-
-html {
-  font-size: 100%;
+@font-face {
+    font-family: "League Gothic";  
+    src: url("{{ site.baseurl }}/fonts/leaguegothic.woff") format('woff');
 }
 
-body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+@font-face {
+    font-family: "League Spartan";
+    src: url("{{ site.baseurl }}/fonts/leaguespartan.woff") format('woff');
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 10px;
-  width: 100%;
-}
+
+/* heading font intercept */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
-}
-
-h1 {
-  font-size: 30px;
-  a {
+    font-family: "League Spartan";
+    font-weight: normal;
+    font-style: normal;
     color: inherit;
-  }
+    text-rendering: optimizeLegibility;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
 }
 
-h2 {
-  font-size: 24px;
+/* top-of-page image block */
+.hero-index {
+    background-image: url("{{ site.baseurl }}/images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    margin-bottom: 1.25rem;
 }
 
-h3 {
-  font-size: 20px;
+.hero-about {
+    background-image: url("{{ site.baseurl }}/images/plancy.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 40vh;
+    min-height: 20rem;
+    margin-bottom: 1.25rem;
 }
 
-h4 {
-  font-size: 18px;
-  color: $gray;
+.hero-events {
+    background-image: url("{{ site.baseurl }}/images/parkour/grant_instruct.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 40vh;
+    min-height: 20rem;
+    margin-bottom: 1.25rem;
 }
 
-p {
-  margin: 15px 0;
+.hero-404 {
+    background-image: url("{{ site.baseurl }}/images/404.gif");
+    background-size: cover;
+    background-position: bottom;
+    height: 60vh;
+    margin-bottom: 1.25rem;
 }
 
-a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
+/* wrapper to allow absolute positioning */
+.hero-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+/* caption in the corner */
+.hero-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    color: white;
+    font-size: 4em;
+    font-family: "League Spartan";
+    text-shadow: 4px 4px 0px black;
+
 }
 
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
-}
-
-ul ul, ol ul {
-  list-style-type: circle;
-}
-
-em, i {
-  font-style: italic;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-}
-
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
-}
-
-.date {
-  font-style: italic;
-  color: $gray;
-}
-
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-}
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .masthead
-//
-
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
-.masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-
-  @include mobile {
-    text-align: center;
-  }
-}
-
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
-  }
-}
-
-//
-// .main
-//
-
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
-.post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
+.hero-footnote {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 4em;
+    color: white;
+    text-shadow: 1px 1px 0px black;
     font-style: italic;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
 }
 
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+.hero-footnote a {
+    color: white;
 }
 
-footer {
-  padding: 20px 0;
-  text-align: center;
+/* maul the top bar widget so as to be unrecognisable.
+   better yet, make it transparent, pinned to the top,
+   and with a weird diamond tread stipple pattern */
+
+$top-bar-height: 136px;
+
+.top-bar {
+    position: fixed;
+    height: $top-bar-height;
+    width: 100%;
+    padding: 0.5rem 2.0rem;
+    background-repeat: repeat-x; 
+    background-image: url("{{ site.baseurl }}/images/menu_texture.svg");
+    background-color: transparent;
+    pointer-events: none;
+    z-index: 10;
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
+.top-bar ul {
+    background: transparent;
+}
+
+/* remove padding on left */
+.top-bar-left.menu > li:not(.menu-text) > a {
+    padding: 0;
+}
+
+/* make text padding chunkier on right */
+.top-bar-right.menu > li:not(.menu-text) > a {
+    padding: $top-bar-height/4;
+}
+
+.top-bar ul li > a {
+    font-size: 1.2em;
+    font-family: "League Spartan";
+    text-shadow: 1px 1px 0px black;
+    color: #ffffff;
+    background: transparent;
+    pointer-events: auto;
+    transition: color .25s ease-in-out;
+}
+
+/* add pretty colours to the topbar links */
+a:hover.link-purple {
+    color: #ad7fa8;
+}
+
+a:hover.link-cyan {
+    color: #72c1cf;
+}
+
+a:hover.link-blue {
+    color: #729fcf;
+}
+
+a:hover.link-green {
+    color: #8ae234;
+}
+
+a:hover.link-yellow {
+    color: #fce94f;
+}
+
+a:hover.link-orange {
+    color: #fcaf3e;
+}
+
+a:hover.link-red {
+    color: #ef2929;
+}
+
+
+/* highlight panes */
+.highlight {
+    padding: 1em;
+    border-radius: 3px;
+    margin-bottom: 1.25rem;
+}
+
+/* center images */
+.content img {
+    display: block;
+    margin-bottom: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* used for large photos which can be letterboxed */
+.letterbox {
+    object-fit: cover;
+    max-height: 40vh;
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* input widget styling? this got removed from foundation 6 */
+[type="text"], [type="password"], [type="date"], [type="datetime"], [type="datetime-local"], [type="month"], [type="week"], [type="email"], [type="number"], [type="search"], [type="tel"], [type="time"], [type="url"], [type="color"], textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4375rem;
+    padding: 0.5rem;
+    border: 1px solid #cacaca;
+    margin: 0 0 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #0a0a0a;
+    background-color: #fefefe;
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+    border-radius: 0;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* manual bodge for footer */
+.footer {
+    background-color: #222;
+    color: white;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.footer p {
+    font-family: "League Gothic";
+    font-size: 1.7em;
+    text-shadow: 1px 1px 0px black;
+    margin: 0;
+}
+
+.footer p a {
+    color: white;
+    transition: color .25s ease-in-out;
+}
+
+.footer-copy {
+    display: inline-block;
+}
+
+.footer-abn {
+    display: inline-block;
+    font-size: 80%;
+}
+
+/* stick footer to the bottom of the page using the CSS flexbox element */
+html, body {
+    height: 100%;
+}
+
+.off-canvas-wrap, .inner-wrap {
+    height: 100%;
+    overflow: visible;
+}
+
+.inner-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: none;
+}
+
+/* fixes to make printing look nice */
+@media print {
+    html, body {
+        height: inherit;
+    }
+
+    .main {
+        flex: inherit;
+    }
+
+    .inner-wrap {
+        display: inherit;
+    }
+
+    .top-bar {
+        display: none;
+    }
+
+    .tab-bar section {
+        border: 0;
+    }
+}
+
