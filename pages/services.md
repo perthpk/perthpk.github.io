@@ -2,7 +2,7 @@
 layout: page
 title: Services
 permalink: /services
-hero-class: hero-services
+hero-image: /images/parkour/lazy_grant.jpg
 hero-text: GET INVOLVED
 ---
 

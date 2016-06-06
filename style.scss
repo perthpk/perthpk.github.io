@@ -35,38 +35,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 40vh;
 }
 
-.hero-outer.hero-index {
-    background-image: url("{{ site.baseurl }}/images/hero.jpg");
-    height: 65vh;
-}
-
-.hero-about {
-    background-image: url("{{ site.baseurl }}/images/plancy.jpg");
-    background-position: bottom;
-}
-
-.hero-contact {
-    background-image: url("{{ site.baseurl }}/images/parkour/evie.jpg");
-}
-
-.hero-blog {
-    background-image: url("{{ site.baseurl }}/images/parkour/rail_quad.jpg");
-}
-
-.hero-services {
-    background-image: url("{{ site.baseurl }}/images/parkour/lazy_grant.jpg");
-}
-
-.hero-events {
-    background-image: url("{{ site.baseurl }}/images/parkour/grant_instruct.jpg");
-}
-
-.hero-outer.hero-404 {
-    background-image: url("{{ site.baseurl }}/images/404.gif");
-    background-position: bottom;
-    height: 60vh;
-}
-
 /* wrapper to allow absolute positioning */
 .hero-inner {
     position: relative;

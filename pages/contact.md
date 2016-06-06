@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact
-hero-class: hero-contact
+hero-image: /images/parkour/evie.jpg
 hero-text: CONTACT US
 ---
 

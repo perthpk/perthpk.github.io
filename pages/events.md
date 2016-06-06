@@ -2,7 +2,7 @@
 layout: page
 title: Events
 permalink: /events
-hero-class: hero-events
+hero-image: /images/parkour/grant_instruct.jpg
 hero-text: WHATS ON
 ---
 

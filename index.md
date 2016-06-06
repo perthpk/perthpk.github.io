@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Home
-subtitle: TEST SITE - live is perthparkour.com
 permalink: /
-hero-class: hero-index
+hero-image: /images/hero.jpg
+hero-style: "height: 65vh;"
 hero-text: REACH. ESCAPE.
 ---
 
