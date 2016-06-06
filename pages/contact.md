@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact
+hero-class: hero-contact
 hero-text: CONTACT US
 ---
 
