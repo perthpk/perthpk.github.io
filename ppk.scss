@@ -40,6 +40,16 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     background-position: bottom;
     height: 40vh;
+    min-height: 20rem;
+    margin-bottom: 1.25rem;
+}
+
+.hero-events {
+    background-image: url("{{ site.baseurl }}/images/parkour/grant_instruct.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 40vh;
+    min-height: 20rem;
     margin-bottom: 1.25rem;
 }
 
