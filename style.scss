@@ -97,9 +97,18 @@ $top-bar-height: 136px;
 }
 
 /* make text padding chunkier on right */
-.top-bar-right.menu > li:not(.menu-text) > a {
-    padding: $top-bar-height/4;
+@media screen and (min-width: 40em) {
+    .top-bar-right.menu > li:not(.menu-text) > a {
+        padding: $top-bar-height/4 $top-bar-height/8;
+    }
 }
+
+@media screen and (min-width: 64em) {
+    .top-bar-right.menu > li:not(.menu-text) > a {
+        padding: $top-bar-height/4;
+    }
+}
+
 
 .top-bar ul li > a {
     font-size: 1.2em;
