@@ -103,7 +103,7 @@ $top-bar-height: 136px;
     background: transparent;
 }
 
-/* remove padding on left */
+/* remove padding on left of top-bar */
 .top-bar-left.menu > li:not(.menu-text) > a {
     padding: 0;
 }
@@ -121,8 +121,8 @@ $top-bar-height: 136px;
     }
 }
 
-
-.top-bar ul li > a {
+/* change top-bar/side menu fonts to Spartan */
+.top-bar ul li > a, .off-canvas ul li > a {
     font-size: 1.2em;
     font-family: "League Spartan";
     text-shadow: 1px 1px 0px black;
@@ -130,6 +130,11 @@ $top-bar-height: 136px;
     background: transparent;
     pointer-events: auto;
     transition: color .25s ease-in-out;
+}
+
+/* unbunch side menu from the top */
+.off-canvas ul {
+    margin-top: 2em;
 }
 
 /* add pretty colours to the topbar links */
@@ -235,13 +240,8 @@ a:hover.link-red, a.current.link-red {
 }
 
 /* stick footer to the bottom of the page using the CSS flexbox element */
-html, body {
+html, body, .off-canvas-wrapper, .off-canvas-wrapper-inner {
     height: 100%;
-}
-
-.off-canvas-wrapper, .off-canvas-wrapper-inner {
-    height: 100%;
-    overflow: visible;
 }
 
 .off-canvas-content {
@@ -261,6 +261,20 @@ html, body {
 
 .top-bar .top-bar-left, .top-bar .top-bar-right {
     flex: 1 1 0px;
+}
+
+/* set off-canvas background to be a darker colour */
+
+.off-canvas-wrapper {
+    background-color: rgb(66, 79, 90);
+}
+
+.off-canvas {
+    background-color: transparent;
+}
+
+.off-canvas-content {
+    background-color: white;
 }
 
 /* fixes to make printing look nice */

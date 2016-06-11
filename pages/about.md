@@ -12,7 +12,7 @@ hero-text: BE STRONG
 The goal of the Perth Parkour Community is to teach people the basics of Parkour, and to promote a positive understanding and awareness of Parkour. We help teach people of all ages, sizes and fitness levels how to train Parkour from the ground up.
 
 <div class="row">
-<div class="columns" markdown="1">
+<div class="columns small-12 medium-6" markdown="1">
 ### What is Parkour?
 
 Parkour is a physical discipline in which one trains to become efficient in their movement in order to overcome obstacles (both physical and mental). This can involve running, jumping, climbing, balancing, and other techniques. A practitioner of parkour is known as a traceur (or traceuse).
@@ -21,9 +21,9 @@ Often confused with Freerunning, Parkour is more about efficiency; movement that
 
 For an enlightening presentation on Parkour, see [Charles on Parkour training](https://www.youtube.com/watch?v=3x-vqr3ZnZE) to the right.
 </div>
-<div class="columns shrink">
+<div class="columns small-12 medium-6"><div class="flex-video widescreen">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3x-vqr3ZnZE" frameborder="0" allowfullscreen></iframe>
-</div>
+</div></div>
 </div>
 
 ### Training and progression
