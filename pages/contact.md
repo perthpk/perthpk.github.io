@@ -16,7 +16,7 @@ Before contacting us, please note the following:
  - Our classes run in rain, hail or shine
  - For your first class please pre-fill a [waiver](http://www.parkour.asn.au/docs/APA_waiver.pdf) and bring it with you
 
-<form>
+<form action="https://formspree.io/isaac.mclellan@perthparkour.com" method="POST">
     <div>
         <label for="name">Name:</label>
         <input type="text" id="name" name="user_name" />
@@ -35,8 +35,9 @@ Before contacting us, please note the following:
     </div>
     
     <div class="button">
-        <button type="submit">Send</button>
+        <button type="submit" value="Send">Send</button>
     </div>
+    <input type="text" name="_gotcha" style="display:none" />
 </form>
 </div>
 
