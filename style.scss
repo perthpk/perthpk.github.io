@@ -1,6 +1,12 @@
 ---
 ---
 
+/* cloak vue */
+
+[v-cloak] {
+    display: none;
+}
+
 
 @font-face {
     font-family: "League Gothic";  

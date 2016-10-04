@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation-flex.css" />
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/foundation-sites@6.2.3/dist/foundation-flex.css" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/font-awesome@4.6.3/css/font-awesome.css"/>
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css">
 
         <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -116,8 +116,9 @@
             </div> <!--off-canvas-wrapper-inner-->
         </div> <!--off-canvas-wrapper-->
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/jquery@2.2.4/dist/jquery.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/foundation-sites@6.2.3/dist/foundation.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/vue@2.0.1/dist/vue.js"></script>
         <script type="text/javascript">
             $(document).foundation();
             $("a[href*='" + location.pathname.slice(0,-1) + "']").addClass("current");
