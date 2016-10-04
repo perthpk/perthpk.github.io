@@ -26,7 +26,7 @@ Find your passion for Parkour by joining in classes, workshops and other trainin
 </a></div>
 </div>
 <div class="row"><div class="columns text-center">
-<h3>Supported Organisations</h3>
-Perth Parkour supports the following organisations in running APA qualified Parkour classes
-<a href="http://www.ninjaacademy.com.au/" target="_blank"><img src="/images/parkour/ninjaacademy.jpg" title="Ninja Academy"></a></div>
+<h3>Endorsed Organisations</h3>
+Perth Parkour endorses the below organisations that run Parkour classes with <a href="http://parkour.asn.au/">Australian Parkour Association</a> qualified instructors.<hr>
+<a href="http://www.ninjaacademy.com.au/" target="_blank"><img title="Ninja Academy" src="/images/parkour/ninjaacademy.jpg" class="thumbnail" title="Ninja Academy"></a></div>
 </div>

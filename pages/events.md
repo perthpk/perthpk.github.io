@@ -10,13 +10,14 @@ To register for a Saturday class please buy a ticket from [Eventbrite](https://w
 
 {% raw %}
 <div>
-<div v-cloak id="events">
-<div v-for="event in activeEvents" class="callout success">
+<div id="events">
+<i v-if="!events">Loading events from Eventbrite ...</i>
+<div v-cloak v-for="event in activeEvents" class="callout success">
   <h4><a v-bind:href="event.url" target="_blank" v-html="event.name.html"></a></h4>
   <div v-html="event.description.html"></div>
 </div>
-<h4 v-if="activeEvents == 0">There are no current classes scheduled - the last 3 classes are below.</h4>
-<div v-for="event in endedEvents" class="callout secondary">
+<h4 v-cloak v-if="activeEvents == 0">There are no current classes scheduled - the last 3 classes are below.</h4>
+<div v-cloak v-for="event in endedEvents" class="callout secondary">
   <h5><a v-bind:href="event.url" target="_blank" v-html="event.name.html"></a></h5>
   <div v-html="event.description.html"></div>
 </div>
