@@ -2,9 +2,9 @@
 layout: page
 title: Home
 permalink: /
-hero-image: /images/2016finalclass/floorislava2.jpg
+hero-image: /images/2016finalclass/poserclimbup.jpg
 hero-style: "height: 65vh;"
-hero-text: STRONG. USEFUL.
+hero-text: RUN, CLIMB, JUMP, VAULT
 ---
 
 # Test Site - live is [perthparkour.com](http://www.perthparkour.com/home)

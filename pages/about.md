@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about
-hero-image: /images/plancy.jpg
+hero-image: /images/2016finalclass/firemancarry.jpg
 hero-style: "background-position: bottom;" 
 hero-text: BE STRONG
 ---
