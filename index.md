@@ -2,9 +2,9 @@
 layout: page
 title: Home
 permalink: /
-hero-image: /images/hero.jpg
+hero-image: /images/finalclass2016/floorislava2.jpg
 hero-style: "height: 65vh;"
-hero-text: REACH. ESCAPE.
+hero-text: STRONG. USEFUL.
 ---
 
 # Test Site - live is [perthparkour.com](http://www.perthparkour.com/home)
