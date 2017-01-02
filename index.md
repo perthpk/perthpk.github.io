@@ -2,7 +2,7 @@
 layout: page
 title: Home
 permalink: /
-hero-image: /images/finalclass2016/floorislava2.jpg
+hero-image: /images/2016finalclass/floorislava2.jpg
 hero-style: "height: 65vh;"
 hero-text: STRONG. USEFUL.
 ---
