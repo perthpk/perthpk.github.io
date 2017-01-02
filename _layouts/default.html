@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="manifest" href="/images/manifest.json">
+        
         <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+        <meta name="description" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}">
+        
+        <!-- icon -->
+        <link rel="icon" href="/images/icon.png">
+        <link rel="apple-touch-icon" href="/images/icon.png">
+        <meta name="msapplication-TileImage" content="/images/icon.png">
+        
+        <!-- ios homescreen -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Perth Parkour">
+
         <link rel="stylesheet" type="text/css" href="https://unpkg.com/foundation-sites@6.2.3/dist/foundation-flex.css" />
         <link rel="stylesheet" type="text/css" href="https://unpkg.com/font-awesome@4.6.3/css/font-awesome.css"/>
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css">
@@ -51,7 +65,7 @@
 
                             <ul class="top-bar-left menu">
                                 <li>
-                                    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg"/></a>
+                                    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/perthparkour.svg"/></a>
                                 </li>
                             </ul>
 

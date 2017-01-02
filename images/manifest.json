@@ -1,0 +1,12 @@
+{
+  "name": "Perth Parkour",
+  "short_name": "perthpk",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/images/icon.png"
+    }
+  ]
+}
