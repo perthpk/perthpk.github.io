@@ -109,6 +109,13 @@ $top-bar-height: 136px;
     background: transparent;
 }
 
+/* styling for the logo button */
+.logo {
+    height: 100px;
+    min-width: 100px;
+    width: auto;
+}
+
 /* remove padding on left of top-bar */
 .top-bar-left.menu > li:not(.menu-text) > a {
     padding: 0;
