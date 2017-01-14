@@ -32,61 +32,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
 }
 
-/* top-of-page image block */
-.hero-outer {
-    background-size: cover;
-    min-height: 12rem;
-    margin-bottom: 1.25rem;
-    background-position: center;
-    height: 40vh;
-}
-
-/* wrapper to allow absolute positioning */
-.hero-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-/* caption in the corner */
-.hero-caption {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    color: white;
-    text-align: right;
-    font-size: 3em;
-    font-family: "League Spartan";
-    text-shadow: 4px 4px 0px black;
-}
-
-@media screen and (min-width: 40em) {
-    .hero-caption {
-        padding-right: 1em;
-        font-size: 4em;
-    }
-}
-
-.hero-footnote {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding-left: 1em;
-    color: white;
-    text-shadow: 1px 1px 0px black;
-    font-style: italic;
-}
-
-@media screen and (min-width: 40em) {
-    .hero-footnote {
-        padding: 2em 4em;
-    }
-}
-
-.hero-footnote a {
-    color: white;
-}
-
 /* maul the top bar widget so as to be unrecognisable.
    better yet, make it transparent, pinned to the top,
    and with a weird diamond tread stipple pattern */
@@ -262,8 +207,18 @@ html, body, .off-canvas-wrapper, .off-canvas-wrapper-inner {
     flex-direction: column;
 }
 
+/* fullsize background image with white content bg */
+
 .main {
     flex: 1 0 auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.row.content {
+    background-color: #fff;
+    margin-top: 10rem;
+    padding-top: 2rem;
 }
 
 .footer {
