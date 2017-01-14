@@ -7,7 +7,7 @@ hero-style: "height: 65vh;"
 hero-text:
 ---
 
-# Perth Parkour - upcoming events
+### Perth Parkour - upcoming events
 
 Find your passion for Parkour by joining in classes, workshops and other training sessions with the Perth Parkour community. To register for a Saturday class please buy a ticket from [Eventbrite](https://www.eventbrite.com.au/o/perth-parkour-inc-8630642536)
 
