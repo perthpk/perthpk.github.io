@@ -12,11 +12,11 @@ To register for a Saturday class please buy a ticket from [Eventbrite](https://w
 <div>
 <div id="events">
 <i v-if="!events">Loading events from Eventbrite ...</i>
-<div v-cloak v-for="event in activeEvents" class="callout success">
+<div v-cloak v-for="event in events" class="callout success">
   <h4><a v-bind:href="event.url" target="_blank" v-html="event.name.html"></a></h4>
   <div v-html="event.description.html"></div>
 </div>
-<h4 v-cloak v-if="activeEvents == 0">There are no current classes scheduled - the last 3 classes are below.</h4>
+<h4 v-cloak v-if="events == 0">There are no current classes scheduled - the last 3 classes are below.</h4>
 <div v-cloak v-for="event in endedEvents" class="callout secondary">
   <h5><a v-bind:href="event.url" target="_blank" v-html="event.name.html"></a></h5>
   <div v-html="event.description.html"></div>
@@ -25,24 +25,12 @@ To register for a Saturday class please buy a ticket from [Eventbrite](https://w
 <script>
 document.onreadystatechange = function () {
     if (document.readyState == 'complete') {
-        $.get("https://zpnv41w9qb.execute-api.ap-southeast-2.amazonaws.com/prod/ppkevents", function(data) {
+        $.get("https://www.eventbriteapi.com/v3/users/me/owned_events/?token=3HTPZLQ7T4LOE2DJQAIY&format=json&status=live", function(data) {
             window.app = new Vue({
                 el: '#events',
                 data: {
                     message: 'Hello Vue!',
                     events: data.events.reverse().slice(0,3)
-                },
-                computed: {
-                    activeEvents: function() {
-                        return this.events.filter(function(event) {
-                            return event.status == 'active';
-                        });
-                    },
-                    endedEvents: function() {
-                        return this.events.filter(function(event) {
-                            return event.status == 'ended';
-                        });
-                    }
                 }
             });
         })
