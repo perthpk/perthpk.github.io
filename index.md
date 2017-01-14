@@ -43,14 +43,14 @@ document.onreadystatechange = function () {
 </div>
 {% endraw %}
 
-<div class="row">
-<div class="columns large-4 small-12">
-<a href="/about"><h3>about</h3></a></div>
-<div class="columns large-4 small-12">
-<a href="/events"><h3>events</h3></a></div>
-<div class="columns large-4 small-12">
-<a href="/services"><h3>services</h3></a></div>
-</div>
+### Get in touch
+
+Before <a href="/contact">contacting us</a>, please note the following:
+
+ - Our regular Saturday classes are available to everyone regardless of age, gender or fitness level
+ - Our classes run in rain, hail or shine
+ - For your first class please pre-fill a [waiver](http://www.parkour.asn.au/docs/APA_waiver.pdf) and bring it with you
+
 <div class="row"><div class="columns text-center">
 <h3>Endorsed Organisations</h3>
 Perth Parkour endorses the below organisations that run Parkour classes with <a href="http://parkour.asn.au/">Australian Parkour Association</a> qualified instructors.<hr>
