@@ -6,8 +6,6 @@ hero-image: /images/parkour/evie.jpg
 hero-text: CONTACT US
 ---
 
-<div class="row">
-<div class="columns large-6 small-12" markdown="1">
 ### Get in touch
 
 Before contacting us, please note the following:
@@ -16,7 +14,9 @@ Before contacting us, please note the following:
  - Our classes run in rain, hail or shine
  - For your first class please pre-fill a [waiver](http://www.parkour.asn.au/docs/APA_waiver.pdf) and bring it with you
 
-<form action="https://formspree.io/isaac.mclellan@perthparkour.com" method="POST">
+Feel free to [message us on facebook](https://www.facebook.com/perthparkour) or use the form below:
+
+<form action="https://formspree.io/info@perthparkour.com" method="POST">
     <div>
         <label for="name">Name:</label>
         <input type="text" id="name" name="user_name" />
@@ -39,10 +39,3 @@ Before contacting us, please note the following:
     </div>
     <input type="text" name="_gotcha" style="display:none" />
 </form>
-</div>
-
-<div class="columns large-6 small-12">
-<h3>Find Us</h3>
-<iframe src="https://mapsengine.google.com/maps/d/embed?mid=zF6eR2rrE0PU.kTgXL8p2o9u8" height="480" width="100%" frameborder="0" scrolling="no" style="border-width: 0;"></iframe>
-</div>
-</div>
