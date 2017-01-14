@@ -19,7 +19,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-title" content="Perth Parkour">
 
-        <link rel="stylesheet" type="text/css" href="https://unpkg.com/foundation-sites@6.2.3/dist/foundation-flex.css" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/foundation-sites@6.3.0/dist/foundation-flex.css" />
         <link rel="stylesheet" type="text/css" href="https://unpkg.com/font-awesome@4.6.3/css/font-awesome.css"/>
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css">
 
@@ -34,15 +34,44 @@
     </head>
 
     <body>
-        <div class="off-canvas-wrapper">
-            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-                <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
-                    <!-- Close button -->
-                    <button class="close-button" aria-label="Close menu" type="button" data-close>
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+        <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
 
-                    <ul class="vertical menu side-menu">
+            <ul class="vertical menu side-menu">
+                <li>
+                    <a class="link-orange" href="{{ site.baseurl }}/about">ABOUT</a>
+                </li>
+                <li>
+                    <a class="link-blue" href="{{ site.baseurl }}/services">SERVICES</a>
+                </li>
+                <li>
+                    <a class="link-purple" href="{{ site.baseurl }}/contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
+            <div class="main">
+
+                <div class="top-bar" data-topbar>
+
+
+                    <ul class="top-bar-left menu">
+                        <li>
+                            <a href="{{ site.baseurl }}/"><img class="logo show-for-large" src="{{ site.baseurl }}/images/perthparkour_swole.svg"/><img class="logo hide-for-large" src="{{ site.baseurl }}/images/perthparkour_smol.svg"/></a>
+                        </li>
+                    </ul>
+
+                    <ul class="top-bar-right menu align-right hide-for-medium">
+                        <li>
+                            <a class="link-green" href="#" data-toggle="offCanvas">MENU</a>
+                        </li>
+                    </ul>
+
+                    <ul class="top-bar-right menu align-right show-for-medium">
                         <li>
                             <a class="link-orange" href="{{ site.baseurl }}/about">ABOUT</a>
                         </li>
@@ -53,48 +82,17 @@
                             <a class="link-purple" href="{{ site.baseurl }}/contact">CONTACT</a>
                         </li>
                     </ul>
-                </div>
-                
-                <div class="off-canvas-content" data-off-canvas-content>
-                    <div class="main">
-                        
-                        <div class="top-bar" data-topbar>
 
 
-                            <ul class="top-bar-left menu">
-                                <li>
-                                    <a href="{{ site.baseurl }}/"><img class="logo show-for-large" src="{{ site.baseurl }}/images/perthparkour_swole.svg"/><img class="logo hide-for-large" src="{{ site.baseurl }}/images/perthparkour_smol.svg"/></a>
-                                </li>
-                            </ul>
+                </div>	
 
-                            <ul class="top-bar-right menu align-right hide-for-medium">
-                                <li>
-                                    <a class="link-green" href="#" data-toggle="offCanvas">MENU</a>
-                                </li>
-                            </ul>
-                            
-                            <ul class="top-bar-right menu align-right show-for-medium">
-                                <li>
-                                    <a class="link-orange" href="{{ site.baseurl }}/about">ABOUT</a>
-                                </li>
-                                <li>
-                                    <a class="link-blue" href="{{ site.baseurl }}/services">SERVICES</a>
-                                </li>
-                                <li>
-                                    <a class="link-purple" href="{{ site.baseurl }}/contact">CONTACT</a>
-                                </li>
-                            </ul>
+                <a class="exit-off-canvas" href="#"></a>
 
-
-                        </div>	
-
-                        <a class="exit-off-canvas" href="#"></a>
-
-                        <div class="row content">
-                            <div class="large-12 columns">
-                                {{ content }}
-                            </div>
+                    <div class="row content">
+                        <div class="large-12 columns">
+                            {{ content }}
                         </div>
+                    </div>
 
                     </div>
                     <div class="footer">
@@ -117,8 +115,6 @@
                         </div>
                     </div>
                 </div> <!--off-canvas-wrapper-content-->
-            </div> <!--off-canvas-wrapper-inner-->
-        </div> <!--off-canvas-wrapper-->
 
         <script type="text/javascript" src="https://unpkg.com/jquery@2.2.4/dist/jquery.js"></script>
         <script type="text/javascript" src="https://unpkg.com/foundation-sites@6.2.3/dist/foundation.js"></script>
