@@ -233,16 +233,8 @@ html, body, .off-canvas-wrapper, .off-canvas-wrapper-inner {
 
 /* set off-canvas background to be a darker colour */
 
-.off-canvas-wrapper {
-    background-color: rgb(66, 79, 90);
-}
-
 .off-canvas {
-    background-color: transparent;
-}
-
-.off-canvas-content {
-    background-color: white;
+    background-color: rgb(66, 79, 90);
 }
 
 /* fixes to make printing look nice */
