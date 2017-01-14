@@ -30,8 +30,8 @@
      id="namedview4523"
      showgrid="false"
      inkscape:zoom="1.6268008"
-     inkscape:cx="66.665001"
-     inkscape:cy="72.535004"
+     inkscape:cx="-33.224304"
+     inkscape:cy="72.535005"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -61,14 +61,14 @@
        x1="67.652596"
        x2="67.652596"
        y1="912.33081"
-       y2="1029.9341"
+       y2="982.10126"
        gradientUnits="userSpaceOnUse">
       <stop
          stop-color="#e3e4d8"
          stop-opacity=".5"
          offset="0"
          id="stop4506"
-         style="stop-color:#e3e4d8;stop-opacity:1" />
+         style="stop-color:#e3e4d8;stop-opacity:0.39215687" />
       <stop
          stop-color="#e3e4d8"
          stop-opacity="0"
