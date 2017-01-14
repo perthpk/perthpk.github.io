@@ -4,10 +4,10 @@ title: Home
 permalink: /
 hero-image: /images/2016finalclass/poserclimbup.jpg
 hero-style: "height: 65vh;"
-hero-text: ENJOY MOVEMENT
+hero-text:
 ---
 
-# Test Site - live is [perthparkour.com](http://www.perthparkour.com/home)
+# Find your passion for Parkour
 
 Find your passion for Parkour by joining in classes, workshops and other training sessions with the Perth Parkour community. To register for a Saturday class please buy a ticket from [Eventbrite](https://www.eventbrite.com.au/o/perth-parkour-inc-8630642536)
 
