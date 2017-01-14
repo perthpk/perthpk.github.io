@@ -26,7 +26,15 @@
         <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
         <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
+        <style type="text/css">
+            .main {
+                background-image: url("{{ site.baseurl }}{{ page.hero-image }}");
+                background-size: cover;
+                min-height: 12rem;
+                margin-bottom: 1.25rem;
+                background-position: center;
+            }
+        </style>
     </head>
 
     <body>
