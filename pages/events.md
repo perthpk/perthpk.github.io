@@ -30,7 +30,7 @@ document.onreadystatechange = function () {
                 el: '#events',
                 data: {
                     message: 'Hello Vue!',
-                    events: data.events.reverse().slice(0,3)
+                    events: data.events
                 }
             });
         })
