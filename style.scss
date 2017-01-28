@@ -237,9 +237,17 @@ html, body, .off-canvas-wrapper, .off-canvas-wrapper-inner {
     background-color: rgb(66, 79, 90);
 }
 
+/* stick footer to the bottom of the page when empty */
+
 .off-canvas-content {
     min-height: 100%;
 }
+
+/* rounded rectangles zomg */
+
+.button {
+    border-radius: 4px;
+}  
 
 /* fixes to make printing look nice */
 @media print {

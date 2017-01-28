@@ -7,17 +7,17 @@ hero-style: "height: 65vh;"
 hero-text:
 ---
 
-### Perth Parkour - upcoming events
+### Upcoming events
 
-Find your passion for Parkour by joining in classes, workshops and other training sessions with the Perth Parkour community. To register for a Saturday class please buy a ticket from [Eventbrite](https://www.eventbrite.com.au/o/perth-parkour-inc-8630642536)
+Find your passion for Parkour by joining in classes, workshops and other training sessions with the Perth Parkour community. To register for a Saturday class please buy a ticket from [Eventbrite](https://www.eventbrite.com.au/o/perth-parkour-inc-8630642536).
 
 {% raw %}
 <div>
 <div id="events">
-<i v-if="!events">Loading events from Eventbrite ...</i>
-<div v-cloak v-for="event in events">
+<p v-if="!events" class="text-center"><i>Loading events from Eventbrite ...</i></p>
+<div class="callout" v-cloak v-for="event in events">
   <h4 v-html="event.name.html"></h4>
-  <a v-bind:href="event.url" target="_blank">Book online @Eventbrite</a>
+  <a class="button" v-bind:href="event.url" target="_blank">Book online with Eventbrite</a>
   <div v-html="event.description.html"></div>
 </div>
 <h4 v-cloak v-if="events == 0">There are no current classes scheduled =(</h4>
