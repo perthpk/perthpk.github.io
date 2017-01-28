@@ -237,6 +237,10 @@ html, body, .off-canvas-wrapper, .off-canvas-wrapper-inner {
     background-color: rgb(66, 79, 90);
 }
 
+.off-canvas-content {
+    min-height: 100%;
+}
+
 /* fixes to make printing look nice */
 @media print {
     /* remove global height */
