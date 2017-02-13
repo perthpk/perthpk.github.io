@@ -38,6 +38,6 @@ Parkour also involves a lot of strength and conditioning training to help prepar
 
 You don't need to be young and fit to start Parkour. There's no better time to start training than now!
 
-Check out our Events and Services pages, and come along to one of the many classes or workshops and begin your journey in a safe and positive environment.
+Check out our events, and come along to one of the many classes or workshops and begin your journey in a safe and positive environment.
 
 And if you're looking for extra training take a look at the casual training link in the services section.
