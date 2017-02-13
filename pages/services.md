@@ -21,7 +21,7 @@ Perth Parkour classes are run by experienced and knowledgeable practitioners, in
 
 Classes cover all the basic techniques and philosophy behind Parkour to help you on your Parkour journey, while having fun and keeping fit.
 
-Check out the [Events](/events) page for class information.
+Check out the [front page](/) for class information.
 </div>
 </div>
 
