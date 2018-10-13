@@ -48,8 +48,3 @@ Before <a href="/contact">contacting us</a>, please note the following:
  - Our classes run in rain, hail or shine
  - For your first class please pre-fill a [waiver](http://www.parkour.asn.au/docs/APA_waiver.pdf) and bring it with you
 
-<div class="row"><div class="columns text-center">
-<h3>Endorsed Organisations</h3>
-Perth Parkour endorses the below organisations that run Parkour classes with <a href="http://parkour.asn.au/">Australian Parkour Association</a> qualified instructors.<hr>
-<a href="http://www.ninjaacademy.com.au/" target="_blank"><img title="Ninja Academy" src="/images/parkour/ninjaacademy.jpg" class="thumbnail" title="Ninja Academy"></a></div>
-</div>
