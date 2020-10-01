@@ -25,7 +25,7 @@ Find your passion for Parkour by joining in classes, workshops and other trainin
 <script>
 document.onreadystatechange = function () {
     if (document.readyState == 'complete') {
-        $.get("https://www.eventbriteapi.com/v3/users/me/owned_events/?token=3HTPZLQ7T4LOE2DJQAIY&format=json&status=live", function(data) {
+        $.get("https://www.eventbriteapi.com/v3/organizations/158662962294/events/?token=3HTPZLQ7T4LOE2DJQAIY&format=json&status=live", function(data) {
             window.app = new Vue({
                 el: '#events',
                 data: {
